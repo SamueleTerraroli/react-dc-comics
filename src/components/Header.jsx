@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <header className="container d-flex justify-content-between align-items-center">
-     <img src="/dc-logo.png" alt="Logo" />
+     <img src="src/assets/img/dc-logo.png" alt="Logo" />
      <nav>
         <ul>
             <li><a href="#">characters</a></li>

@@ -9,35 +9,35 @@ const Main = () => {
         <div className="menu">
             <div className="container">
                 <div className="nav">
-                    <ul>
+                    <ul className="d-flex justify-content-between">
                         <li>
-                            <a href="">
-                                <img src="../ass" alt=""/>
-                                <p>Digital comics</p>
+                            <a href="#" className="icon d-flex align-items-center">
+                                <img src="src/assets/img/buy-comics-digital-comics.png" alt="Digital comics"/>
+                                <p className="px-2">Digital comics</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="" alt=""/>
-                                <p>dc merchandise</p>
+                            <a href="#" className="icon d-flex align-items-center">
+                                <img src="src/assets/img/buy-comics-merchandise.png" alt="Merchandise"/>
+                                <p className="px-2">dc merchandise</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="" alt=""/>
-                                <p>subscription</p>
+                            <a href="#" className="icon d-flex align-items-center">
+                                <img src="src/assets/img/buy-comics-subscriptions.png" alt="Subscription"/>
+                                <p className="px-2">subscription</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="" alt=""/>
-                                <p>comic shop locator</p>
+                            <a href="#" className="icon d-flex align-items-center">
+                                <img src="src/assets/img/buy-comics-shop-locator.png" alt="Locator"/>
+                                <p className="px-2">comic shop locator</p>
                             </a>
                         </li>
                         <li>
-                            <a href="">
-                                <img src="" alt=""/>
-                                <p>dc power visa</p>
+                            <a href="#" className="icon d-flex align-items-center">
+                                <img src="src/assets/img/buy-dc-power-visa.svg" alt="Visa"/>
+                                <p className="px-2">dc power visa</p>
                             </a>
                         </li>
                     </ul>

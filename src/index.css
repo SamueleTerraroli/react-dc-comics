@@ -11,6 +11,7 @@ body{
 
 img{
   max-width: 100%;
+  width: 80px;
 }
 
 a{
@@ -38,8 +39,8 @@ ul li a{
   text-align: center;
 }
 
-ul li a:hover,
-ul li a.active{
+header ul li a:hover,
+header ul li a.active{
   border-bottom: 6px solid #0282F9;
 }
 
@@ -55,4 +56,13 @@ ul li a.active{
 }
 .menu{
   background-color: #0282F9 ;
+}
+a img{
+  height: 60px;
+  width: auto;
+  max-width: 60px;
+}
+main a {
+  color: white;
+  font-weight: normal;
 }
