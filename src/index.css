@@ -58,11 +58,24 @@ header ul li a.active{
   background-color: #0282F9 ;
 }
 a img{
-  height: 60px;
+  height: 40px;
   width: auto;
-  max-width: 60px;
+  max-width: 50px;
+}
+a p{
+  padding-left: 20px ;
 }
 main a {
   color: white;
   font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.fun-art{
+  background-image: url(src/assets/img/footer-bg.jpg);
+  min-height: 250px;
+}
+.logo-bg{
+  background-image: url(src/assets/img/dc-logo-bg.png);
+  width: 100%;
 }

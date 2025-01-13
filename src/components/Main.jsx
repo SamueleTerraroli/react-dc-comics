@@ -9,35 +9,35 @@ const Main = () => {
         <div className="menu">
             <div className="container">
                 <div className="nav">
-                    <ul className="d-flex justify-content-between">
+                    <ul className="d-flex justify-content-around">
                         <li>
                             <a href="#" className="icon d-flex align-items-center">
                                 <img src="src/assets/img/buy-comics-digital-comics.png" alt="Digital comics"/>
-                                <p className="px-2">Digital comics</p>
+                                <p>Digital comics</p>
                             </a>
                         </li>
                         <li>
                             <a href="#" className="icon d-flex align-items-center">
                                 <img src="src/assets/img/buy-comics-merchandise.png" alt="Merchandise"/>
-                                <p className="px-2">dc merchandise</p>
+                                <p>dc merchandise</p>
                             </a>
                         </li>
                         <li>
                             <a href="#" className="icon d-flex align-items-center">
                                 <img src="src/assets/img/buy-comics-subscriptions.png" alt="Subscription"/>
-                                <p className="px-2">subscription</p>
+                                <p>subscription</p>
                             </a>
                         </li>
                         <li>
                             <a href="#" className="icon d-flex align-items-center">
                                 <img src="src/assets/img/buy-comics-shop-locator.png" alt="Locator"/>
-                                <p className="px-2">comic shop locator</p>
+                                <p>comic shop locator</p>
                             </a>
                         </li>
                         <li>
                             <a href="#" className="icon d-flex align-items-center">
                                 <img src="src/assets/img/buy-dc-power-visa.svg" alt="Visa"/>
-                                <p className="px-2">dc power visa</p>
+                                <p>dc power visa</p>
                             </a>
                         </li>
                     </ul>
@@ -45,10 +45,16 @@ const Main = () => {
             </div>
         </div>
         <div className="fun-art">
-            <div className="container">
-                <nav>
+            <div className="container d-flex row-cols-2">
+                <div className="col-6">
+                    <nav>
 
-                </nav>
+                    </nav>
+                </div>
+                <div className="logo-bg col-6">
+
+                </div>
+
             </div>
         </div>
     </main>
