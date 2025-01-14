@@ -1,12 +1,13 @@
 import Header from "./components/Header"
 import Main from "./components/Main"
+import { menuHeader } from "./data/menuData"
 
 const App = () => {
   return (
     <>
-    <Header />
-    <Main />
-  </>
+      <Header menu={menuHeader} />
+      <Main />
+    </>
   )
 }
 
