@@ -51,6 +51,13 @@ const menuSites = [
 
 
 ];
+const socialMenu = [
+    { id: 1, url: "#", img: "../assets/img/footer-facebook.png" },
+    { id: 2, url: "#", img: "../assets/img/footer-twitter.png" },
+    { id: 3, url: "#", img: "../assets/img/footer-youtube.png" },
+    { id: 4, url: "#", img: "../assets/img/footer-pinterest.png" },
+    { id: 5, url: "#", img: "../assets/img/footer-periscope.png" }
+]
 
 
 export {
@@ -58,5 +65,6 @@ export {
     menuDcComics,
     menuShop,
     menuDc,
-    menuSites
+    menuSites,
+    socialMenu
 }
