@@ -1,3 +1,6 @@
+import ComicsList from "./comics/ComicsList";
+import comicList from "./comics/ComicsList"
+
 const Main = (props) => {
 
     const menuDcComics = props.menuDcComics;
@@ -6,10 +9,13 @@ const Main = (props) => {
     const menuSites = props.menuSites;
     return (
         <main>
-            <div className="content py-5">
-                <div className="container">
-                    <p>-- Content Goes Here --</p>
+            <div className="jumbo">
+                <div className="interactBtn absoluteBtn">
+                    <a href="#">LOAD MORE</a>
                 </div>
+            </div>
+            <div className="content py-5">
+                <ComicsList />
             </div>
             <div className="menu">
                 <div className="container">
@@ -96,7 +102,8 @@ const Main = (props) => {
 
 
                     </div>
-                    <div className="logo-bg col-8">
+                    <div className="logo-bg col-8 position-relative">
+                        <img src="/img/dc-logo-bg.png" alt="Logo" />
 
                     </div>
 

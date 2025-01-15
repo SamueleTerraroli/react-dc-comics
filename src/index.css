@@ -27,17 +27,19 @@ header {
 ul {
   display: flex;
   list-style: none;
+
+  li {
+    font-weight: bold;
+
+    a {
+      padding: 43px 20px;
+      text-transform: uppercase;
+      text-align: center;
+    }
+  }
 }
 
-ul li {
-  font-weight: bold;
-}
 
-ul li a {
-  padding: 43px 20px;
-  text-transform: uppercase;
-  text-align: center;
-}
 
 header ul li a:hover,
 header ul li a.active {
@@ -47,8 +49,9 @@ header ul li a.active {
 /* MAIN */
 
 .content {
-  background-color: black;
-  color: white;
+  background-color: #1C1C1C;
+
+
 }
 
 .content p {
@@ -58,10 +61,17 @@ header ul li a.active {
 
 .menu {
   background-color: #0282F9;
+  position: relative;
+  z-index: 999;
+
+  a {
+    color: white;
+    font-weight: normal;
+  }
 }
 
 a img {
-  height: 40px;
+  height: 30px;
   width: auto;
   max-width: 50px;
 }
@@ -70,57 +80,124 @@ a p {
   padding-left: 20px;
 }
 
-main a {
-  color: white;
-  font-weight: normal;
-  font-size: 0.8rem;
-}
-
 .fun-art {
   background-image: url(/img/footer-bg.jpg);
   min-height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
+
+  ul {
+    display: block;
+    margin-top: 10px;
+
+    li {
+      line-height: 1rem;
+    }
+
+    a {
+      color: grey;
+      font-size: 0.6rem;
+      text-transform: capitalize;
+      line-height: 0.3rem;
+      padding: 0;
+    }
+
+    .menuTitle a {
+      font-weight: bold;
+      color: white;
+      margin: 30px 0;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      line-height: 2rem;
+    }
+  }
+
+  img {
+    position: absolute;
+    width: 450px;
+    top: 1150px;
+    left: 700px;
+    z-index: 1;
+  }
+
 }
 
-.logo-bg {
-  background-image: url(/img/dc-logo-bg.png);
-  width: 100%;
-  background-repeat: no-repeat;
-
-}
-
-.fun-art ul {
-  display: block;
-  margin-top: 10px;
-}
-
-.fun-art a {
-  color: grey;
-  font-size: 0.6rem;
-  text-transform: capitalize;
-  line-height: 0.3rem;
-  padding: 0;
-}
-
-.fun-art li {
-  line-height: 1rem;
-}
-
-.menuTitle a {
-  font-weight: bold;
-  color: white;
-  margin: 30px 0;
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  line-height: 2rem;
+.jumbo {
+  position: relative;
+  background-image: url(../public/img/jumbotron.jpg);
+  min-height: 400px;
 }
 
 /* FOOTER */
 
 footer {
+  position: relative;
   background-color: #303030;
   min-height: 100px;
+  z-index: 999;
+
+  ul li a {
+    padding: 10px;
+  }
+}
+
+
+
+.follow {
+  color: #0282F9;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+/* COMIC LIST */
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .comicCard {
+    flex-basis: calc(100%/6);
+    padding: 10px;
+
+    h3 {
+      font-size: 0.8rem;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: lightgray;
+    }
+
+    img {
+      aspect-ratio: 1/1;
+      width: 100%;
+      object-fit: fill;
+    }
+  }
+
+}
+
+/* BTN */
+
+.interactBtn {
+  margin-top: 40px;
+
+  a {
+    background-color: #0282F9;
+    padding: 5px 30px;
+    font-weight: bold;
+    color: white;
+
+  }
+}
+
+.absoluteBtn {
+  position: absolute;
+  bottom: -15px;
+  left: 60px;
+
+  a {
+    font-size: 1.3rem;
+  }
 }
 
 .StBtn {
@@ -128,10 +205,4 @@ footer {
   padding: 10px 10px;
   color: white;
   border: 2px solid #0282F9;
-}
-
-.follow {
-  color: #0282F9;
-  font-weight: bold;
-  margin: 0 10px;
 }
