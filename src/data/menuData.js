@@ -52,11 +52,11 @@ const menuSites = [
 
 ];
 const socialMenu = [
-    { id: 1, url: "#", img: "../assets/img/footer-facebook.png" },
-    { id: 2, url: "#", img: "../assets/img/footer-twitter.png" },
-    { id: 3, url: "#", img: "../assets/img/footer-youtube.png" },
-    { id: 4, url: "#", img: "../assets/img/footer-pinterest.png" },
-    { id: 5, url: "#", img: "../assets/img/footer-periscope.png" }
+    { id: 1, url: "#", img: "/img/footer-facebook.png" },
+    { id: 2, url: "#", img: "/img/footer-twitter.png" },
+    { id: 3, url: "#", img: "/img/footer-youtube.png" },
+    { id: 4, url: "#", img: "/img/footer-pinterest.png" },
+    { id: 5, url: "#", img: "/img/footer-periscope.png" }
 ]
 
 
