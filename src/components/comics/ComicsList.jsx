@@ -5,6 +5,10 @@ const ComicsList = () => {
     return (
         <section id="comicList" className="container card-container">
 
+            <div className="interactBtn absoluteBtn">
+                <a href="#">CURRENT SERIES</a>
+            </div>
+
             {comics.map(comic => (
                 <ComicCard key={comic.id} comicData={comic} />
             ))}

@@ -51,7 +51,6 @@ header ul li a.active {
 .content {
   background-color: #1C1C1C;
 
-
 }
 
 .content p {
@@ -112,20 +111,25 @@ a p {
     }
   }
 
-  img {
-    position: absolute;
-    width: 450px;
-    top: 1150px;
-    left: 700px;
-    z-index: 1;
+  .logo-bg {
+    position: relative;
+
+    img {
+      position: absolute;
+      width: 450px;
+      top: -50%;
+      left: 45%;
+      z-index: 1;
+    }
   }
 
 }
 
 .jumbo {
-  position: relative;
   background-image: url(../public/img/jumbotron.jpg);
-  min-height: 400px;
+  min-height: 450px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* FOOTER */
@@ -155,6 +159,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
+
+  .absoluteBtn {
+    position: absolute;
+    top: -100px;
+    left: 0;
+  }
+
+
 
   .comicCard {
     flex-basis: calc(100%/6);
@@ -187,16 +200,6 @@ footer {
     font-weight: bold;
     color: white;
 
-  }
-}
-
-.absoluteBtn {
-  position: absolute;
-  bottom: -15px;
-  left: 60px;
-
-  a {
-    font-size: 1.3rem;
   }
 }
 
