@@ -11,7 +11,7 @@ const Footer = (props) => {
                     <a href="#" className="follow">FOLLOW US</a>
                     <ul>
                         {socialMenu.map(img => (
-                            <li>
+                            <li key={`img-${img.id}`}>
                                 <a href={img.url}><img src={img.img} /></a>
                             </li>
                         ))}

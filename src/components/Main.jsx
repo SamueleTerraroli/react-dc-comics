@@ -17,31 +17,31 @@ const Main = (props) => {
                         <ul className="d-flex justify-content-around">
                             <li>
                                 <a href="#" className="icon d-flex align-items-center">
-                                    <img src="src/assets/img/buy-comics-digital-comics.png" alt="Digital comics" />
+                                    <img src="/img/buy-comics-digital-comics.png" alt="Digital comics" />
                                     <p>Digital comics</p>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="icon d-flex align-items-center">
-                                    <img src="src/assets/img/buy-comics-merchandise.png" alt="Merchandise" />
+                                    <img src="/img/buy-comics-merchandise.png" alt="Merchandise" />
                                     <p>dc merchandise</p>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="icon d-flex align-items-center">
-                                    <img src="src/assets/img/buy-comics-subscriptions.png" alt="Subscription" />
+                                    <img src="/img/buy-comics-subscriptions.png" alt="Subscription" />
                                     <p>subscription</p>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="icon d-flex align-items-center">
-                                    <img src="src/assets/img/buy-comics-shop-locator.png" alt="Locator" />
+                                    <img src="img/buy-comics-shop-locator.png" alt="Locator" />
                                     <p>comic shop locator</p>
                                 </a>
                             </li>
                             <li>
                                 <a href="#" className="icon d-flex align-items-center">
-                                    <img src="src/assets/img/buy-dc-power-visa.svg" alt="Visa" />
+                                    <img src="/img/buy-dc-power-visa.svg" alt="Visa" />
                                     <p>dc power visa</p>
                                 </a>
                             </li>
@@ -56,14 +56,14 @@ const Main = (props) => {
                             <nav>
                                 <ul>
                                     {menuDcComics.map(comic => (
-                                        <li className={comic.isTitle ? 'menuTitle' : ''}>
+                                        <li key={`comics-${comic.id}`} className={comic.isTitle ? 'menuTitle' : ''}>
                                             <a href={comic.url} className={comic.isTitle ? 'menuTitle' : ''}>{comic.text}</a>
                                         </li>
                                     ))}
                                 </ul>
                                 <ul>
                                     {menuShop.map(shop => (
-                                        <li className={shop.isTitle ? 'menuTitle' : ''}>
+                                        <li key={`shop-${shop.id}`} className={shop.isTitle ? 'menuTitle' : ''}>
                                             <a href={shop.url} className={shop.isTitle ? 'menuTitle' : ''}>{shop.text}</a>
                                         </li>
                                     ))}
@@ -75,7 +75,7 @@ const Main = (props) => {
                             <nav>
                                 <ul>
                                     {menuDc.map(dc => (
-                                        <li className={dc.isTitle ? 'menuTitle' : ''}>
+                                        <li key={`dc-${dc.id}`} className={dc.isTitle ? 'menuTitle' : ''}>
                                             <a href={dc.url} className={dc.isTitle ? 'menuTitle' : ''}>{dc.text}</a>
                                         </li>
                                     ))}
@@ -86,7 +86,7 @@ const Main = (props) => {
                             <nav>
                                 <ul>
                                     {menuSites.map(site => (
-                                        <li className={site.isTitle ? 'menuTitle' : ''}>
+                                        <li key={`site-${site.id}`} className={site.isTitle ? 'menuTitle' : ''}>
                                             <a href={site.url} className={site.isTitle ? 'menuTitle' : ''}>{site.text}</a>
                                         </li>
                                     ))}

@@ -77,14 +77,14 @@ main a {
 }
 
 .fun-art {
-  background-image: url(src/assets/img/footer-bg.jpg);
+  background-image: url(/img/footer-bg.jpg);
   min-height: 250px;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .logo-bg {
-  background-image: url(src/assets/img/dc-logo-bg.png);
+  background-image: url(/img/dc-logo-bg.png);
   width: 100%;
   background-repeat: no-repeat;
 
